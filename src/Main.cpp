@@ -27,10 +27,10 @@ void loop() {
     //Serial.println("loop");
     if (Bluetooth.available() > 0) {
         //leeemos la opcion
-        size_t num_read = Serial.readBytesUntil('\n', msg_buffer, sizeof(msg_buffer)-1 );
+        const String string = Bluetooth.readString();
 
-        Serial.print(msg_buffer);
-        Bluetooth.print(msg_buffer);
+        Serial.println(string);
+        Bluetooth.println(string);
         //si la opcion esta entre '1' y '9'
         /*if (option >= '1' && option <= '9') {
             //restamos el valor '0' para obtener el numero enviado

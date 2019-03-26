@@ -182,7 +182,7 @@ clean: CMakeFiles/PLATFORMIO_UPLOAD.dir/clean
 CMakeFiles/arduinoTestBT.dir/all:
 	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/depend
 	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target arduinoTestBT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target arduinoTestBT"
 .PHONY : CMakeFiles/arduinoTestBT.dir/all
 
 # Include target in all.
@@ -192,7 +192,7 @@ all: CMakeFiles/arduinoTestBT.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/arduinoTestBT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/arduinoTestBT.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/arduinoTestBT.dir/rule

@@ -66,35 +66,19 @@
 				<Compiler>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/variants/standard"/>
+					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
+					<Add directory="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger"/>
+					<Add directory="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2"/>
+					<Add directory="/home/mrbueno/.platformio/lib/CmdMessenger_ID171"/>
+					<Add directory="/home/mrbueno/.platformio/lib/CmdMessenger_ID171/utility"/>
+					<Add directory="/home/mrbueno/.platformio/lib/PID_ID2"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/HID/src"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground/utility"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Bridge/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Esplora/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Ethernet/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Firmata"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Firmata/utility"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/GSM/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Keyboard/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/LiquidCrystal/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Mouse/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/RobotIRremote/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Robot_Control/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Robot_Motor/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/SD/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Servo/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/SpacebrewYun/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Stepper/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/TFT/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Temboo/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/WiFi/src"/>
 					<Add directory="/home/mrbueno/.platformio/packages/toolchain-atmelavr/avr/include"/>
-					<Add directory="/home/mrbueno/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/4.9.2/include"/>
-					<Add directory="/home/mrbueno/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/4.9.2/include-fixed"/>
+					<Add directory="/home/mrbueno/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include"/>
+					<Add directory="/home/mrbueno/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include-fixed"/>
 					<Add directory="/home/mrbueno/.platformio/packages/tool-unity"/>
 					<Add directory="/home/mrbueno/code/arduinoTestBT/include"/>
 					<Add directory="/home/mrbueno/code/arduinoTestBT/src"/>
@@ -123,35 +107,19 @@
 				<Compiler>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/variants/standard"/>
+					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
+					<Add directory="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger"/>
+					<Add directory="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2"/>
+					<Add directory="/home/mrbueno/.platformio/lib/CmdMessenger_ID171"/>
+					<Add directory="/home/mrbueno/.platformio/lib/CmdMessenger_ID171/utility"/>
+					<Add directory="/home/mrbueno/.platformio/lib/PID_ID2"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/HID/src"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground/utility"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Bridge/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Esplora/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Ethernet/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Firmata"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Firmata/utility"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/GSM/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Keyboard/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/LiquidCrystal/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Mouse/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/RobotIRremote/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Robot_Control/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Robot_Motor/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/SD/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Servo/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/SpacebrewYun/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Stepper/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/TFT/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/Temboo/src"/>
-					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/WiFi/src"/>
 					<Add directory="/home/mrbueno/.platformio/packages/toolchain-atmelavr/avr/include"/>
-					<Add directory="/home/mrbueno/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/4.9.2/include"/>
-					<Add directory="/home/mrbueno/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/4.9.2/include-fixed"/>
+					<Add directory="/home/mrbueno/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include"/>
+					<Add directory="/home/mrbueno/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include-fixed"/>
 					<Add directory="/home/mrbueno/.platformio/packages/tool-unity"/>
 					<Add directory="/home/mrbueno/code/arduinoTestBT/include"/>
 					<Add directory="/home/mrbueno/code/arduinoTestBT/src"/>
@@ -252,6 +220,66 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/.library.json">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/PID_v1.cpp">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/PID_v1.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/README.txt">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/examples/PID_AdaptiveTunings/PID_AdaptiveTunings.ino">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/examples/PID_Basic/PID_Basic.ino">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/examples/PID_PonM/PID_PonM.ino">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/examples/PID_RelayOutput/PID_RelayOutput.ino">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/keywords.txt">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/library.json">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/library.properties">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/.gitignore">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/.travis.yml">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/CmdMessenger.cpp">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/CmdMessenger.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/LICENSE.md">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/README.md">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/keywords.txt">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/library.json">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/library.properties">
+			<Option target="arduinoTestBT"/>
+		</Unit>
 		<Unit filename="/home/mrbueno/code/arduinoTestBT/src/Main.cpp">
 			<Option target="arduinoTestBT"/>
 		</Unit>
