@@ -1,0 +1,1 @@
+/home/mrbueno/.platformio/packages/toolchain-atmelavr/bin/avr-g++  -g  -rdynamic CMakeFiles/arduinoTestBT.dir/src/Main.cpp.o  -o arduinoTestBT 
