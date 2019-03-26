@@ -1,46 +1,84 @@
-//
-// Created by mrbueno on 16/03/19.
-//
+// *** SentandReceive ***
 
-#include <Arduino.h>
+// This example expands the previous Receive example. The Arduino will now send back a status.
+// It adds a demonstration of how to:
+// - Handle received commands that do not have a function attached
+// - Send a command with a parameter to the PC
+
+#include <CmdMessenger.h>  // CmdMessenger
 #include <SoftwareSerial.h>
-//#include "../lib/CmdMessenger/CmdMessenger.h"
+
+// Blinking led variables
+bool ledState                   = 0;   // Current state of Led
+const int kBlinkLed             = 8;  // Pin of internal Led
 
 SoftwareSerial Bluetooth(2,3);
-const int led = 13;
-char msg_buffer[7];
 
-//CmdMessenger cmdMessenger = CmdMessenger(Bluetooth);
+// Attach a new CmdMessenger object to the default Bluetooth port
+CmdMessenger cmdMessenger = CmdMessenger(Bluetooth);
 
-void setup() {
-    Serial.begin(9600);
+// This is the list of recognized commands. These can be commands that can either be sent or received.
+// In order to receive, attach a callback function to these events
+enum
+{
+    kSetLed              , // Command to request led to be set in specific state
+    kStatus              , // Command to report status
+};
+
+// Called when a received command has no attached function
+void OnUnknownCommand()
+{
+    cmdMessenger.sendCmd(kStatus,"Command without attached callback");
+}
+
+// Callback function that sets led on or off
+void OnSetLed()
+{
+    // Read led state argument, interpret string as boolean
+    ledState = cmdMessenger.readBoolArg();
+    // Set led
+    digitalWrite(kBlinkLed, ledState?HIGH:LOW);
+    // Send back status that describes the led state
+    cmdMessenger.sendCmd(kStatus,(int)ledState);
+}
+
+// Callbacks define on which received commands we take action
+void attachCommandCallbacks()
+{
+    // Attach callback methods
+    cmdMessenger.attach(OnUnknownCommand);
+    cmdMessenger.attach(kSetLed, OnSetLed);
+}
+
+
+
+// Setup function
+void setup()
+{
+    // Listen on serial connection for messages from the PC
     Bluetooth.begin(9600);
-    Bluetooth.setTimeout(10);
 
-    Serial.println("setup");
-    Bluetooth.println("setup");
+    // Adds newline to every command
+    // Do not send LFCR from the other party
+    cmdMessenger.printLfCr();
+
+    // Attach my application's user-defined callback methods
+    attachCommandCallbacks();
+
+    // Send the status to the PC that says the Arduino has booted
+    // Note that this is a good debug function: it will let you also know
+    // if your program had a bug and the arduino restarted
+    cmdMessenger.sendCmd(kStatus,"Arduino has started!");
+
+    // set pin for blink LED
+    pinMode(kBlinkLed, OUTPUT);
 }
 
-void loop() {
-    //si existe información pendiente
-    //Bluetooth.println("loop");
-    //Serial.println("loop");
-    if (Bluetooth.available() > 0) {
-        //leeemos la opcion
-        const String string = Bluetooth.readString();
-
-        Serial.println(string);
-        Bluetooth.println(string);
-        //si la opcion esta entre '1' y '9'
-        /*if (option >= '1' && option <= '9') {
-            //restamos el valor '0' para obtener el numero enviado
-            option -= '0';
-            for (int i = 0; i < option; i++) {
-                digitalWrite(led, HIGH);
-                delay(100);
-                digitalWrite(led, LOW);
-                delay(200);
-            }
-        }*/
-    }
+// Loop function
+void loop()
+{
+    // Process incoming serial data, and perform callbacks
+    cmdMessenger.feedinSerialData();
 }
+
+
