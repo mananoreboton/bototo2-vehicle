@@ -280,6 +280,12 @@
 		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/library.properties">
 			<Option target="arduinoTestBT"/>
 		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/src/Debugger.cpp">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/src/Debugger.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
 		<Unit filename="/home/mrbueno/code/arduinoTestBT/src/Main.cpp">
 			<Option target="arduinoTestBT"/>
 		</Unit>

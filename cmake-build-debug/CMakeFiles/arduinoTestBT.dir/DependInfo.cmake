@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/PID_v1.cpp" "/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.o"
   "/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/CmdMessenger.cpp" "/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.o"
+  "/home/mrbueno/code/arduinoTestBT/src/Debugger.cpp" "/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.o"
   "/home/mrbueno/code/arduinoTestBT/src/Main.cpp" "/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles/arduinoTestBT.dir/src/Main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
