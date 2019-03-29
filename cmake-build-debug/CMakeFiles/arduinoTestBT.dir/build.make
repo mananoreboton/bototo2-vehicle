@@ -57,48 +57,9 @@ include CMakeFiles/arduinoTestBT.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/arduinoTestBT.dir/flags.make
 
-CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.o: CMakeFiles/arduinoTestBT.dir/flags.make
-CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.o: ../.piolibdeps/PID_ID2/PID_v1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.o"
-	/home/mrbueno/.platformio/packages/toolchain-atmelavr/bin/avr-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.o -c /home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/PID_v1.cpp
-
-CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.i"
-	/home/mrbueno/.platformio/packages/toolchain-atmelavr/bin/avr-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/PID_v1.cpp > CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.i
-
-CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.s"
-	/home/mrbueno/.platformio/packages/toolchain-atmelavr/bin/avr-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/PID_v1.cpp -o CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.s
-
-CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.o: CMakeFiles/arduinoTestBT.dir/flags.make
-CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.o: ../lib/CmdMessenger/CmdMessenger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.o"
-	/home/mrbueno/.platformio/packages/toolchain-atmelavr/bin/avr-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.o -c /home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/CmdMessenger.cpp
-
-CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.i"
-	/home/mrbueno/.platformio/packages/toolchain-atmelavr/bin/avr-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/CmdMessenger.cpp > CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.i
-
-CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.s"
-	/home/mrbueno/.platformio/packages/toolchain-atmelavr/bin/avr-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/CmdMessenger.cpp -o CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.s
-
-CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.o: CMakeFiles/arduinoTestBT.dir/flags.make
-CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.o: ../src/Debugger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.o"
-	/home/mrbueno/.platformio/packages/toolchain-atmelavr/bin/avr-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.o -c /home/mrbueno/code/arduinoTestBT/src/Debugger.cpp
-
-CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.i"
-	/home/mrbueno/.platformio/packages/toolchain-atmelavr/bin/avr-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mrbueno/code/arduinoTestBT/src/Debugger.cpp > CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.i
-
-CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.s"
-	/home/mrbueno/.platformio/packages/toolchain-atmelavr/bin/avr-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mrbueno/code/arduinoTestBT/src/Debugger.cpp -o CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.s
-
 CMakeFiles/arduinoTestBT.dir/src/Main.cpp.o: CMakeFiles/arduinoTestBT.dir/flags.make
 CMakeFiles/arduinoTestBT.dir/src/Main.cpp.o: ../src/Main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/arduinoTestBT.dir/src/Main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/arduinoTestBT.dir/src/Main.cpp.o"
 	/home/mrbueno/.platformio/packages/toolchain-atmelavr/bin/avr-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arduinoTestBT.dir/src/Main.cpp.o -c /home/mrbueno/code/arduinoTestBT/src/Main.cpp
 
 CMakeFiles/arduinoTestBT.dir/src/Main.cpp.i: cmake_force
@@ -111,21 +72,15 @@ CMakeFiles/arduinoTestBT.dir/src/Main.cpp.s: cmake_force
 
 # Object files for target arduinoTestBT
 arduinoTestBT_OBJECTS = \
-"CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.o" \
-"CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.o" \
-"CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.o" \
 "CMakeFiles/arduinoTestBT.dir/src/Main.cpp.o"
 
 # External object files for target arduinoTestBT
 arduinoTestBT_EXTERNAL_OBJECTS =
 
-arduinoTestBT: CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.o
-arduinoTestBT: CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.o
-arduinoTestBT: CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.o
 arduinoTestBT: CMakeFiles/arduinoTestBT.dir/src/Main.cpp.o
 arduinoTestBT: CMakeFiles/arduinoTestBT.dir/build.make
 arduinoTestBT: CMakeFiles/arduinoTestBT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable arduinoTestBT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable arduinoTestBT"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/arduinoTestBT.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

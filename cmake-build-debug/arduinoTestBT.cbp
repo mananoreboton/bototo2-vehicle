@@ -67,8 +67,7 @@
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/variants/standard"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
-					<Add directory="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger"/>
-					<Add directory="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2"/>
+					<Add directory="/home/mrbueno/.platformio/lib/TaskScheduler_ID721/src"/>
 					<Add directory="/home/mrbueno/.platformio/lib/CmdMessenger_ID171"/>
 					<Add directory="/home/mrbueno/.platformio/lib/CmdMessenger_ID171/utility"/>
 					<Add directory="/home/mrbueno/.platformio/lib/PID_ID2"/>
@@ -108,8 +107,7 @@
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/variants/standard"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
-					<Add directory="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger"/>
-					<Add directory="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2"/>
+					<Add directory="/home/mrbueno/.platformio/lib/TaskScheduler_ID721/src"/>
 					<Add directory="/home/mrbueno/.platformio/lib/CmdMessenger_ID171"/>
 					<Add directory="/home/mrbueno/.platformio/lib/CmdMessenger_ID171/utility"/>
 					<Add directory="/home/mrbueno/.platformio/lib/PID_ID2"/>
@@ -220,72 +218,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/.library.json">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/PID_v1.cpp">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/PID_v1.h">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/README.txt">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/examples/PID_AdaptiveTunings/PID_AdaptiveTunings.ino">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/examples/PID_Basic/PID_Basic.ino">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/examples/PID_PonM/PID_PonM.ino">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/examples/PID_RelayOutput/PID_RelayOutput.ino">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/keywords.txt">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/library.json">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/.piolibdeps/PID_ID2/library.properties">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/.gitignore">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/.travis.yml">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/CmdMessenger.cpp">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/CmdMessenger.h">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/LICENSE.md">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/README.md">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/keywords.txt">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/library.json">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/CmdMessenger/library.properties">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/src/Debugger.cpp">
-			<Option target="arduinoTestBT"/>
-		</Unit>
-		<Unit filename="/home/mrbueno/code/arduinoTestBT/src/Debugger.h">
-			<Option target="arduinoTestBT"/>
-		</Unit>
 		<Unit filename="/home/mrbueno/code/arduinoTestBT/src/Main.cpp">
 			<Option target="arduinoTestBT"/>
 		</Unit>

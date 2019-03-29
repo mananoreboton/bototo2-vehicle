@@ -253,87 +253,6 @@ PLATFORMIO_UPDATE_ALL/fast:
 	$(MAKE) -f CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/build.make CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/build
 .PHONY : PLATFORMIO_UPDATE_ALL/fast
 
-.piolibdeps/PID_ID2/PID_v1.o: .piolibdeps/PID_ID2/PID_v1.cpp.o
-
-.PHONY : .piolibdeps/PID_ID2/PID_v1.o
-
-# target to build an object file
-.piolibdeps/PID_ID2/PID_v1.cpp.o:
-	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.o
-.PHONY : .piolibdeps/PID_ID2/PID_v1.cpp.o
-
-.piolibdeps/PID_ID2/PID_v1.i: .piolibdeps/PID_ID2/PID_v1.cpp.i
-
-.PHONY : .piolibdeps/PID_ID2/PID_v1.i
-
-# target to preprocess a source file
-.piolibdeps/PID_ID2/PID_v1.cpp.i:
-	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.i
-.PHONY : .piolibdeps/PID_ID2/PID_v1.cpp.i
-
-.piolibdeps/PID_ID2/PID_v1.s: .piolibdeps/PID_ID2/PID_v1.cpp.s
-
-.PHONY : .piolibdeps/PID_ID2/PID_v1.s
-
-# target to generate assembly for a file
-.piolibdeps/PID_ID2/PID_v1.cpp.s:
-	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/.piolibdeps/PID_ID2/PID_v1.cpp.s
-.PHONY : .piolibdeps/PID_ID2/PID_v1.cpp.s
-
-lib/CmdMessenger/CmdMessenger.o: lib/CmdMessenger/CmdMessenger.cpp.o
-
-.PHONY : lib/CmdMessenger/CmdMessenger.o
-
-# target to build an object file
-lib/CmdMessenger/CmdMessenger.cpp.o:
-	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.o
-.PHONY : lib/CmdMessenger/CmdMessenger.cpp.o
-
-lib/CmdMessenger/CmdMessenger.i: lib/CmdMessenger/CmdMessenger.cpp.i
-
-.PHONY : lib/CmdMessenger/CmdMessenger.i
-
-# target to preprocess a source file
-lib/CmdMessenger/CmdMessenger.cpp.i:
-	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.i
-.PHONY : lib/CmdMessenger/CmdMessenger.cpp.i
-
-lib/CmdMessenger/CmdMessenger.s: lib/CmdMessenger/CmdMessenger.cpp.s
-
-.PHONY : lib/CmdMessenger/CmdMessenger.s
-
-# target to generate assembly for a file
-lib/CmdMessenger/CmdMessenger.cpp.s:
-	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/lib/CmdMessenger/CmdMessenger.cpp.s
-.PHONY : lib/CmdMessenger/CmdMessenger.cpp.s
-
-src/Debugger.o: src/Debugger.cpp.o
-
-.PHONY : src/Debugger.o
-
-# target to build an object file
-src/Debugger.cpp.o:
-	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.o
-.PHONY : src/Debugger.cpp.o
-
-src/Debugger.i: src/Debugger.cpp.i
-
-.PHONY : src/Debugger.i
-
-# target to preprocess a source file
-src/Debugger.cpp.i:
-	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.i
-.PHONY : src/Debugger.cpp.i
-
-src/Debugger.s: src/Debugger.cpp.s
-
-.PHONY : src/Debugger.s
-
-# target to generate assembly for a file
-src/Debugger.cpp.s:
-	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/src/Debugger.cpp.s
-.PHONY : src/Debugger.cpp.s
-
 src/Main.o: src/Main.cpp.o
 
 .PHONY : src/Main.o
@@ -380,15 +299,6 @@ help:
 	@echo "... PLATFORMIO_UPLOADFS"
 	@echo "... PLATFORMIO_REBUILD_PROJECT_INDEX"
 	@echo "... PLATFORMIO_UPDATE_ALL"
-	@echo "... .piolibdeps/PID_ID2/PID_v1.o"
-	@echo "... .piolibdeps/PID_ID2/PID_v1.i"
-	@echo "... .piolibdeps/PID_ID2/PID_v1.s"
-	@echo "... lib/CmdMessenger/CmdMessenger.o"
-	@echo "... lib/CmdMessenger/CmdMessenger.i"
-	@echo "... lib/CmdMessenger/CmdMessenger.s"
-	@echo "... src/Debugger.o"
-	@echo "... src/Debugger.i"
-	@echo "... src/Debugger.s"
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
