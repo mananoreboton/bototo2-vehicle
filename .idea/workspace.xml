@@ -23,12 +23,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec922180-b3d3-40f1-af0b-2568113a9075" name="Default" comment="Async wheels control">
-      <change afterPath="$PROJECT_DIR$/src/GearMotor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GearMotor.h" afterDir="false" />
+    <list default="true" id="ec922180-b3d3-40f1-af0b-2568113a9075" name="Default" comment="dirty">
+      <change afterPath="$PROJECT_DIR$/src/GearMotorCallbacks.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GearMotor.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GearMotor.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/GearMotor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.h" beforeDir="false" />
     </list>
     <ignored path="platformio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,9 +60,9 @@
         <counts>
           <entry key="Makefile" value="1" />
           <entry key="README" value="2" />
-          <entry key="c" value="2" />
-          <entry key="cpp" value="14" />
-          <entry key="h" value="29" />
+          <entry key="c" value="3" />
+          <entry key="cpp" value="15" />
+          <entry key="h" value="34" />
           <entry key="ini" value="1" />
           <entry key="json" value="1" />
           <entry key="txt" value="2" />
@@ -73,23 +74,23 @@
           <entry key="CMakeLists.txt" value="1" />
           <entry key="Ini" value="1" />
           <entry key="JSON" value="1" />
-          <entry key="ObjectiveC" value="45" />
+          <entry key="ObjectiveC" value="52" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="1257" />
-          <entry key="h" value="258" />
-          <entry key="txt" value="105" />
+          <entry key="cpp" value="1545" />
+          <entry key="h" value="327" />
+          <entry key="txt" value="110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="3" />
-          <entry key="ObjectiveC" value="1515" />
-          <entry key="PLAIN_TEXT" value="102" />
+          <entry key="ObjectiveC" value="1872" />
+          <entry key="PLAIN_TEXT" value="107" />
         </counts>
       </usages-collector>
     </session>
@@ -99,11 +100,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+            <state relative-caret-position="918">
+              <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
               <folding>
                 <element signature="e#1#26#0" expanded="true" />
               </folding>
@@ -111,23 +112,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GearMotor.cpp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GearMotor.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="59" lean-forward="true" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+            <state relative-caret-position="1386">
+              <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
               <folding>
-                <element signature="e#42#58#0" expanded="true" />
+                <element signature="e#41#57#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.platformio/lib/TaskScheduler_ID721/src/TaskScheduler.h">
+        <entry file="file://$PROJECT_DIR$/src/GearMotorCallbacks.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="236" selection-start-line="236" selection-end-line="236" />
+            <state relative-caret-position="144">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -146,15 +147,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -182,6 +174,7 @@
       <find>WHEEL1_PWD</find>
       <find>GearMotor::</find>
       <find>stopLeftWheelsTask</find>
+      <find>LEFT</find>
     </findStrings>
     <replaceStrings>
       <replace>Bluetooth</replace>
@@ -189,6 +182,8 @@
       <replace>//Serial</replace>
       <replace>Serial.</replace>
       <replace>pwdPin</replace>
+      <replace>Right</replace>
+      <replace>RIGHT</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -203,10 +198,13 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/CMakeListsPrivate.txt" />
         <option value="$PROJECT_DIR$/src/Main.h" />
-        <option value="$PROJECT_DIR$/src/Main.cpp" />
         <option value="$PROJECT_DIR$/src/GearMotorDeclarations.h" />
-        <option value="$PROJECT_DIR$/src/GearMotor.h" />
+        <option value="$PROJECT_DIR$/src/MotorGearCallbacks.cpp" />
+        <option value="$PROJECT_DIR$/src/MotorGearCallbacks.h" />
         <option value="$PROJECT_DIR$/src/GearMotor.cpp" />
+        <option value="$PROJECT_DIR$/src/GearMotorCallbacks.h" />
+        <option value="$PROJECT_DIR$/src/GearMotor.h" />
+        <option value="$PROJECT_DIR$/src/Main.cpp" />
       </list>
     </option>
   </component>
@@ -291,7 +289,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PLATFORMIO_BUILD">
+  <component name="RunManager" selected="Application.PLATFORMIO_UPLOAD">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -389,8 +387,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="25" width="1867" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" order="0" sideWeight="0.49946064" visible="true" weight="0.12657534" />
+      <window_info active="true" id="Project" order="0" sideWeight="0.49946064" visible="true" weight="0.12657534" />
       <window_info id="Favorites" order="1" sideWeight="0.50053936" side_tool="true" weight="0.18943436" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32938644" />
@@ -399,9 +398,9 @@
       <window_info anchor="bottom" id="TODO" order="3" />
       <window_info anchor="bottom" id="CMake" order="4" weight="0.32938644" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32975295" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="6" visible="true" weight="0.32760474" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32760474" />
       <window_info anchor="bottom" auto_hide="true" x="277" y="1107" width="1499" height="693" id="Serial Monitor" order="7" weight="0.29557714" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.33727175" />
+      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.33727175" />
       <window_info anchor="right" id="Database" order="0" />
     </layout>
     <layout-to-restore>
@@ -436,7 +435,8 @@
     <MESSAGE value="Receive Command on SoftwareSerial" />
     <MESSAGE value="Debug with params" />
     <MESSAGE value="Async wheels control" />
-    <option name="LAST_COMMIT_MESSAGE" value="Async wheels control" />
+    <MESSAGE value="dirty" />
+    <option name="LAST_COMMIT_MESSAGE" value="dirty" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/CmdMessenger/library.json" />
@@ -531,48 +531,10 @@
     <entry file="file://$PROJECT_DIR$/platformio.ini">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.platformio/lib/TaskScheduler_ID721/src/TaskScheduler.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="236" selection-start-line="236" selection-end-line="236" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GearMotorDeclarations.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.platformio/lib/TaskScheduler_ID721/src/TaskSchedulerDeclarations.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-          <folding>
-            <element signature="e#1#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.platformio/packages/framework-arduinoavr/cores/arduino/wiring.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="240" column="5" selection-start-line="240" selection-start-column="5" selection-end-line="240" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -583,15 +545,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GearMotor.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GearMotor.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Main.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="59" lean-forward="true" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.platformio/packages/framework-arduinoavr/cores/arduino/wiring.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="240" column="5" selection-start-line="240" selection-start-column="5" selection-end-line="240" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MotorGearCallbacks.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GearMotor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.platformio/lib/TaskScheduler_ID721/src/TaskScheduler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="152" column="25" lean-forward="true" selection-start-line="152" selection-start-column="8" selection-end-line="152" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.platformio/lib/TaskScheduler_ID721/src/TaskSchedulerDeclarations.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GearMotorCallbacks.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GearMotor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
           <folding>
-            <element signature="e#42#58#0" expanded="true" />
+            <element signature="e#41#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding>
+            <element signature="e#1#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

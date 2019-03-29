@@ -1,7 +1,7 @@
 
 #include <CmdMessenger.h>
 #include <TaskScheduler.h>
-#include "Main.h"
+#include "GearMotor.h"
 
 //SoftwareSerial Bluetooth(2, 3);   º
 
@@ -49,7 +49,7 @@ void OnLeftWheelCommand() {
         return;
     }
     cmdMessenger.sendCmd(ACK, "OnLeftWheelCommand");
-    moveLeftWheel(speed);
+    moveLeftGearMotor(speed);
     debug("OnLeftWheelCommand", speed);
 }
 
@@ -62,7 +62,7 @@ void OnRightWheelCommand() {
         return;
     }
     cmdMessenger.sendCmd(ACK, "OnRightWheelCommand");
-    moveRightWheel(speed);
+    moveRightGearMotor(speed);
     debug("OnRightWheelCommand", speed);
 }
 
@@ -80,8 +80,8 @@ void attachCommandCallbacks() {
 // Setup function
 void setup() {
     scheduler.init();
-    scheduler.addTask(stopLeftWheelsTask);
-    scheduler.addTask(stopRightWheelsTask);
+    scheduler.addTask(stopLeftGearMotorTask);
+    scheduler.addTask(stopRightGearMotorTask);
     //Serial.begin(9600);
 
     // Listen on //Serial connection for messages from the PC
@@ -95,7 +95,7 @@ void setup() {
     // Attach my application's user-defined callback methods
     attachCommandCallbacks();
 
-    initWheels();
+    initGearMotors();
 
     // Send the status to the PC that says the Arduino has booted
     // Note that this is a good debug function: it will let you also know

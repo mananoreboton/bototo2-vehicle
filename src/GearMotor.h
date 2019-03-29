@@ -1,40 +1,79 @@
 //
 // Created by mrbueno on 29/03/19.
 //
+#ifndef _GEARMOTOR_H_
+#define _GEARMOTOR_H_
 
-#ifndef ARDUINOTESTBT_GEARMOTOR_H
-#define ARDUINOTESTBT_GEARMOTOR_H
+#include <HID.h>
+#include <TaskSchedulerDeclarations.h>
+#include "GearMotorCallbacks.h"
 
+#define LEFT_GEARMOTOR_PWD 5
+#define LEFT_GEARMOTOR_AHEAD 6
+#define LEFT_GEARMOTOR_REVERSE 7
 
-#include <TaskScheduler.h>
-
-class GearMotor {
-
-//#define WHEEL1_PWD 5
-//#define WHEEL1_AHEAD     6
-//#define WHEEL1_REVERSE 7
-//
-//#define WHEEL2_PWD 10
-//#define WHEEL2_AHEAD 8
-//#define WHEEL2_REVERSE 9
+#define RIGHT_GEARMOTOR_PWD 10
+#define RIGHT_GEARMOTOR_AHEAD 8
+#define RIGHT_GEARMOTOR_REVERSE 9
 
 const unsigned long MIN_MOVE_TIME = 100;
 
-    uint8_t pwdPin;
-    uint8_t aheadPin;
-    uint8_t reversePin;
+Task stopLeftGearMotorTask(1000, TASK_ONCE, stopLeftGearMotor);
+Task stopRightGearMotorTask(1000, TASK_ONCE, stopRightGearMotor);
 
-    bool isInit = false;
+boolean areInitializedGearMotors = false;
 
-public:
-    GearMotor(uint8_t pwdPin, uint8_t aheadPin, uint8_t reversePin);
+void initGearMotors() {
+    pinMode(LEFT_GEARMOTOR_PWD, OUTPUT);
+    pinMode(LEFT_GEARMOTOR_AHEAD, OUTPUT);
+    pinMode(LEFT_GEARMOTOR_REVERSE, OUTPUT);
+    pinMode(RIGHT_GEARMOTOR_PWD, OUTPUT);
+    pinMode(RIGHT_GEARMOTOR_AHEAD, OUTPUT);
+    pinMode(RIGHT_GEARMOTOR_REVERSE, OUTPUT);
+    areInitializedGearMotors = true;
+}
 
-    Task stopLeftWheelsTask;
+void move(int speed, int pwdPin, int aheadPin, int reversePin) {
+    if (areInitializedGearMotors) {
+        analogWrite(pwdPin, 100);
+        if (speed > 0) {
+            digitalWrite(aheadPin, HIGH);
+            digitalWrite(reversePin, LOW);
+        } else if (speed < 0) {
+            digitalWrite(aheadPin, LOW);
+            digitalWrite(reversePin, HIGH);
+        }
+    }
+}
 
-    void init();
-    void move(int speed);
-    void stop();
-};
+void moveRightGearMotor(int speed) {
+    stopRightGearMotorTask.disable();
+    move(speed, RIGHT_GEARMOTOR_PWD, RIGHT_GEARMOTOR_AHEAD, RIGHT_GEARMOTOR_REVERSE);
+    stopRightGearMotorTask.restartDelayed(MIN_MOVE_TIME);
+}
 
+void moveLeftGearMotor(int speed) {
+    stopLeftGearMotorTask.disable();
+    move(speed, LEFT_GEARMOTOR_PWD, LEFT_GEARMOTOR_AHEAD, LEFT_GEARMOTOR_REVERSE);
+    stopLeftGearMotorTask.restartDelayed(MIN_MOVE_TIME);
+}
 
-#endif //ARDUINOTESTBT_GEARMOTOR_H
+void stop(int pwdPin, int aheadPin, int reversePin) {
+    if (areInitializedGearMotors) {
+        analogWrite(pwdPin, 0);
+        digitalWrite(aheadPin, LOW);
+        digitalWrite(reversePin, LOW);
+    }
+}
+
+void stopLeftGearMotor() {
+    stop(LEFT_GEARMOTOR_PWD, LEFT_GEARMOTOR_AHEAD, LEFT_GEARMOTOR_REVERSE);
+    stopLeftGearMotorTask.disable();
+}
+void stopRightGearMotor() {
+    stop(RIGHT_GEARMOTOR_PWD, RIGHT_GEARMOTOR_AHEAD, RIGHT_GEARMOTOR_REVERSE);
+    stopRightGearMotorTask.disable();
+}
+
+#endif //_GEARMOTOR_H_
+
