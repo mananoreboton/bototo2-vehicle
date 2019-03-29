@@ -10,14 +10,6 @@ CmdMessenger cmdMessenger = CmdMessenger(Serial);
 
 Scheduler scheduler;
 
-#define WHEEL1_PWD 5
-#define WHEEL1_AHEAD     6
-#define WHEEL1_REVERSE 7
-
-#define WHEEL2_PWD 10
-#define WHEEL2_AHEAD 8
-#define WHEEL2_REVERSE 9
-
 // This is the list of recognized commands. These can be commands that can either be sent or received.
 // In order to receive, attach a callback function to these events
 enum {
@@ -40,67 +32,6 @@ void debug(const char *msg, int16_t value) {
         sprintf(buffer, "%s with %d", msg, value);
         //Serial.println(buffer);
     }
-}
-
-void initWheels() {
-    pinMode(WHEEL1_PWD, OUTPUT);
-    pinMode(WHEEL1_AHEAD, OUTPUT);
-    pinMode(WHEEL1_REVERSE, OUTPUT);
-    pinMode(WHEEL2_PWD, OUTPUT);
-    pinMode(WHEEL2_AHEAD, OUTPUT);
-    pinMode(WHEEL2_REVERSE, OUTPUT);
-}
-
-Task stopLeftWheelsTask(1000, TASK_ONCE, &stopLeftWheels);
-Task stopRightWheelsTask(1000, TASK_ONCE, &stopRightWheels);
-
-unsigned long MIN_MOVE_TIME = 100;
-
-void stopLeftWheels() {
-    analogWrite(WHEEL1_PWD, 0);
-    digitalWrite(WHEEL1_AHEAD, LOW);
-    digitalWrite(WHEEL1_REVERSE, LOW);
-    stopLeftWheelsTask.disable();
-}
-
-void stopRightWheels() {
-    analogWrite(WHEEL2_PWD, 0);
-    digitalWrite(WHEEL2_AHEAD, LOW);
-    digitalWrite(WHEEL2_REVERSE, LOW);
-    stopRightWheelsTask.disable();
-}
-
-void moveLeftWheel(int speed) {
-    stopLeftWheelsTask.disable();
-    analogWrite(WHEEL1_PWD, 100);
-    if (speed > 0) {
-        digitalWrite(WHEEL1_AHEAD, HIGH);
-        digitalWrite(WHEEL1_REVERSE, LOW);
-    } else if (speed < 0) {
-        digitalWrite(WHEEL1_AHEAD, LOW);
-        digitalWrite(WHEEL1_REVERSE, HIGH);
-    }
-    //delay(1000);
-    //stopLeftWheels();
-
-    //stopLeftWheelsTask.enableDelayed(1000);
-    stopLeftWheelsTask.restartDelayed(MIN_MOVE_TIME);
-}
-
-void moveRightWheel(int speed) {
-    stopRightWheelsTask.disable();
-    analogWrite(WHEEL2_PWD, 100);
-    if (speed > 0) {
-        digitalWrite(WHEEL2_AHEAD, HIGH);
-        digitalWrite(WHEEL2_REVERSE, LOW);
-    } else if (speed < 0) {
-        digitalWrite(WHEEL2_AHEAD, LOW);
-        digitalWrite(WHEEL2_REVERSE, HIGH);
-    }
-    //delay(1000);
-    //stopRightWheels();
-    //stopRightWheelsTask.enableDelayed(1000);
-    stopRightWheelsTask.restartDelayed(MIN_MOVE_TIME);
 }
 
 // Called when a received command has no attached function

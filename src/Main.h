@@ -6,8 +6,3 @@
 #define ARDUINOTESTBT_MAIN_H
 
 #endif //ARDUINOTESTBT_MAIN_H
-
-
-void stopLeftWheels();
-
-void stopRightWheels();
