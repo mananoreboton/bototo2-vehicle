@@ -70,6 +70,7 @@ void stopLeftGearMotor() {
     stop(LEFT_GEARMOTOR_PWD, LEFT_GEARMOTOR_AHEAD, LEFT_GEARMOTOR_REVERSE);
     stopLeftGearMotorTask.disable();
 }
+
 void stopRightGearMotor() {
     stop(RIGHT_GEARMOTOR_PWD, RIGHT_GEARMOTOR_AHEAD, RIGHT_GEARMOTOR_REVERSE);
     stopRightGearMotorTask.disable();
