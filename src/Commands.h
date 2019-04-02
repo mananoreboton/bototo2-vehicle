@@ -56,4 +56,14 @@ void OnRightWheelCommand() {
 }
 
 
+// Callbacks define on which received commands we take action
+void attachCommandCallbacks() {
+    // Attach callback methods
+    cmdMessenger.attach(OnUnknownCommand);
+    cmdMessenger.attach(LEFT_GEARMOTOR_COMMAND, OnLeftWheelCommand);
+    cmdMessenger.attach(RIGHT_GEARMOTOR_COMMAND, OnRightWheelCommand);
+    debug("attachCommandCallbacks");
+}
+
+
 #endif //ARDUINOTESTBT_COMMANDS_H

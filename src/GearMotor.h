@@ -35,14 +35,15 @@ void initGearMotors() {
 
 void move(int speed, int pwdPin, int aheadPin, int reversePin) {
     if (areInitializedGearMotors) {
-        analogWrite(pwdPin, 100);
         if (speed > 0) {
             digitalWrite(aheadPin, HIGH);
             digitalWrite(reversePin, LOW);
         } else if (speed < 0) {
+            speed *= -1;
             digitalWrite(aheadPin, LOW);
             digitalWrite(reversePin, HIGH);
         }
+        analogWrite(pwdPin, speed);
     }
 }
 
