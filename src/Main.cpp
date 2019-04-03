@@ -12,8 +12,8 @@ Scheduler scheduler;
 // Setup function
 void setup() {
     scheduler.init();
-    scheduler.addTask(stopLeftGearMotorTask);
-    scheduler.addTask(stopRightGearMotorTask);
+    //scheduler.addTask(stopLeftGearMotorTask);
+    //scheduler.addTask(stopRightGearMotorTask);
     //Serial.begin(9600);
 
     // Listen on //Serial connection for messages from the PC
