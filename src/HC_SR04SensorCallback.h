@@ -1,0 +1,10 @@
+//
+// Created by mrbueno on 4/04/19.
+//
+
+#ifndef ARDUINOTESTBT_HC_SR04SENSORCALLBACK_H
+#define ARDUINOTESTBT_HC_SR04SENSORCALLBACK_H
+
+void measureObstacleDistance();
+
+#endif //ARDUINOTESTBT_HC_SR04SENSORCALLBACK_H

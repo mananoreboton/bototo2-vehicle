@@ -2,17 +2,17 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="arduinoTestBT" targetName="PLATFORMIO_UPLOADFS" />
+      <config projectName="arduinoTestBT" targetName="PLATFORMIO_BUILD_VERBOSE" />
       <config projectName="arduinoTestBT" targetName="PLATFORMIO_MONITOR" />
-      <config projectName="arduinoTestBT" targetName="arduinoTestBT" />
       <config projectName="arduinoTestBT" targetName="DEBUG" />
       <config projectName="arduinoTestBT" targetName="PLATFORMIO_BUILD" />
-      <config projectName="arduinoTestBT" targetName="PLATFORMIO_UPLOAD" />
+      <config projectName="arduinoTestBT" targetName="PLATFORMIO_UPDATE_ALL" />
+      <config projectName="arduinoTestBT" targetName="PLATFORMIO_UPLOADFS" />
       <config projectName="arduinoTestBT" targetName="PLATFORMIO_REBUILD_PROJECT_INDEX" />
       <config projectName="arduinoTestBT" targetName="PLATFORMIO_TEST" />
       <config projectName="arduinoTestBT" targetName="PLATFORMIO_CLEAN" />
-      <config projectName="arduinoTestBT" targetName="PLATFORMIO_UPDATE_ALL" />
-      <config projectName="arduinoTestBT" targetName="PLATFORMIO_BUILD_VERBOSE" />
+      <config projectName="arduinoTestBT" targetName="PLATFORMIO_UPLOAD" />
+      <config projectName="arduinoTestBT" targetName="arduinoTestBT" />
       <config projectName="arduinoTestBT" targetName="PLATFORMIO" />
       <config projectName="arduinoTestBT" targetName="PLATFORMIO_PROGRAM" />
     </generated>
@@ -24,10 +24,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec922180-b3d3-40f1-af0b-2568113a9075" name="Default" comment="Delegates Commands and Debug">
+      <change afterPath="$PROJECT_DIR$/src/HC_SR04.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HC_SR04.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HC_SR04_sensor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GearMotor.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/GearMotor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GearMotorCallbacks.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.cpp" afterDir="false" />
+    </list>
+    <list id="34f9081b-0bd5-4bca-9275-65b4bf48f695" name="desde master con ultasonic" comment="">
+      <change afterPath="$PROJECT_DIR$/src/HC_SR04SensorCallback.h" afterDir="false" />
     </list>
     <ignored path="platformio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,8 +65,8 @@
           <entry key="Makefile" value="1" />
           <entry key="README" value="2" />
           <entry key="c" value="3" />
-          <entry key="cpp" value="16" />
-          <entry key="h" value="36" />
+          <entry key="cpp" value="17" />
+          <entry key="h" value="41" />
           <entry key="ini" value="1" />
           <entry key="json" value="1" />
           <entry key="txt" value="2" />
@@ -73,7 +79,7 @@
           <entry key="CMakeLists.txt" value="1" />
           <entry key="Ini" value="1" />
           <entry key="JSON" value="1" />
-          <entry key="ObjectiveC" value="55" />
+          <entry key="ObjectiveC" value="61" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="1" />
@@ -81,15 +87,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="1585" />
-          <entry key="h" value="473" />
+          <entry key="cpp" value="1586" />
+          <entry key="h" value="610" />
           <entry key="txt" value="174" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="3" />
-          <entry key="ObjectiveC" value="2058" />
+          <entry key="ObjectiveC" value="2196" />
           <entry key="PLAIN_TEXT" value="171" />
         </counts>
       </usages-collector>
@@ -103,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="262">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
               <folding>
                 <element signature="e#1#27#0" expanded="true" />
               </folding>
@@ -122,19 +128,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.platformio/lib/CmdMessenger_ID171/CmdMessenger.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1026">
-              <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Commands.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+            <state relative-caret-position="702">
+              <caret line="39" column="60" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="60" />
               <folding>
                 <element signature="e#109#134#0" expanded="true" />
               </folding>
@@ -142,50 +139,60 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GearMotor.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GearMotorCallbacks.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.platformio/packages/framework-arduinoavr/cores/arduino/wiring_analog.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1854">
-              <caret line="103" column="24" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="24" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/HC_SR04.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.platformio/lib/TaskScheduler_ID721/src/TaskSchedulerDeclarations.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2376">
-              <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
+            <state relative-caret-position="190">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/HC_SR04_sensor.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+              <folding>
+                <element signature="e#120#158#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/HC_SR04SensorCallback.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platformio.ini">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/GearMotor.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+              <folding>
+                <element signature="e#86#102#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.platformio/lib/TaskScheduler_ID721/src/TaskScheduler.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="236" column="6" selection-start-line="236" selection-start-column="6" selection-end-line="236" selection-end-column="6" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -230,9 +237,11 @@
         <option value="$PROJECT_DIR$/src/GearMotor.cpp" />
         <option value="$PROJECT_DIR$/src/GearMotorCallbacks.h" />
         <option value="$PROJECT_DIR$/src/Debugger.h" />
-        <option value="$PROJECT_DIR$/src/Main.cpp" />
         <option value="$PROJECT_DIR$/src/Commands.h" />
+        <option value="$PROJECT_DIR$/src/HC_SR04SensorCallback.h" />
+        <option value="$PROJECT_DIR$/src/Main.cpp" />
         <option value="$PROJECT_DIR$/src/GearMotor.h" />
+        <option value="$PROJECT_DIR$/src/HC_SR04_sensor.h" />
       </list>
     </option>
   </component>
@@ -268,7 +277,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,7 +287,17 @@
             <path>
               <item name="arduinoTestBT" type="b2602c69:ProjectViewProjectNode" />
               <item name="arduinoTestBT" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arduinoTestBT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arduinoTestBT" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arduinoTestBT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arduinoTestBT" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="arduinoTestBT" type="b2602c69:ProjectViewProjectNode" />
@@ -289,6 +307,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,10 +433,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="25" width="1867" height="1055" extended-state="6" />
+    <frame x="53" y="-2" width="1867" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" sideWeight="0.49946064" visible="true" weight="0.12767123" />
+      <window_info active="true" id="Project" order="0" sideWeight="0.49946064" visible="true" weight="0.12986301" />
       <window_info id="Favorites" order="1" sideWeight="0.50053936" side_tool="true" weight="0.18943436" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32938644" />
@@ -426,9 +445,9 @@
       <window_info anchor="bottom" id="TODO" order="3" />
       <window_info anchor="bottom" id="CMake" order="4" weight="0.32938644" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32975295" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32760474" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32672232" />
       <window_info anchor="bottom" auto_hide="true" x="277" y="1107" width="1499" height="693" id="Serial Monitor" order="7" weight="0.29557714" />
-      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.33727175" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.33727175" />
       <window_info anchor="right" id="Database" order="0" />
     </layout>
     <layout-to-restore>
@@ -446,6 +465,32 @@
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32901832" />
       <window_info anchor="right" id="Database" order="0" />
     </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -466,7 +511,8 @@
     <MESSAGE value="dirty" />
     <MESSAGE value="Delegates to Gear Motor library" />
     <MESSAGE value="Delegates Commands and Debug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delegates Commands and Debug" />
+    <MESSAGE value="desde master con ultasonic" />
+    <option name="LAST_COMMIT_MESSAGE" value="desde master con ultasonic" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/CmdMessenger/library.json" />
@@ -564,22 +610,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MotorGearCallbacks.h" />
-    <entry file="file://$USER_HOME$/.platformio/lib/TaskScheduler_ID721/src/TaskScheduler.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="152" column="25" lean-forward="true" selection-start-line="152" selection-start-column="8" selection-end-line="152" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Debugger.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/.platformio/lib/CmdMessenger_ID171/CmdMessenger.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -595,26 +627,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.platformio/lib/TaskScheduler_ID721/src/TaskSchedulerDeclarations.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/platformio.ini">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Debugger.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#1#27#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.platformio/lib/TaskScheduler_ID721/src/TaskScheduler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="236" column="6" selection-start-line="236" selection-start-column="6" selection-end-line="236" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.platformio/lib/TaskScheduler_ID721/src/TaskSchedulerDeclarations.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -625,10 +661,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/HC_SR04.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HC_SR04SensorCallback.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="e#1#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Commands.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+        <state relative-caret-position="702">
+          <caret line="39" column="60" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="60" />
           <folding>
             <element signature="e#109#134#0" expanded="true" />
           </folding>
@@ -637,8 +693,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GearMotor.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        <state relative-caret-position="316">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding>
+            <element signature="e#86#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HC_SR04_sensor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+          <folding>
+            <element signature="e#120#158#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

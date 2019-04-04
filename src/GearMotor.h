@@ -6,7 +6,6 @@
 
 #include <HID.h>
 #include <TaskSchedulerDeclarations.h>
-#include "GearMotorCallbacks.h"
 
 #define LEFT_GEARMOTOR_PWD 5
 #define LEFT_GEARMOTOR_AHEAD 6
@@ -16,12 +15,8 @@
 #define RIGHT_GEARMOTOR_AHEAD 8
 #define RIGHT_GEARMOTOR_REVERSE 9
 
-const unsigned long MIN_MOVE_TIME = 100;
-
-Task stopLeftGearMotorTask(1000, TASK_ONCE, stopLeftGearMotor);
-Task stopRightGearMotorTask(1000, TASK_ONCE, stopRightGearMotor);
-
 boolean areInitializedGearMotors = false;
+boolean goingForward = false;
 
 void initGearMotors() {
     pinMode(LEFT_GEARMOTOR_PWD, OUTPUT);
@@ -35,13 +30,14 @@ void initGearMotors() {
 
 void move(int speed, int pwdPin, int aheadPin, int reversePin) {
     if (areInitializedGearMotors) {
+        goingForward = false;
         if (speed == 0) {
             digitalWrite(aheadPin, LOW);
             digitalWrite(reversePin, LOW);
         } else if (speed > 0) {
             digitalWrite(aheadPin, HIGH);
             digitalWrite(reversePin, LOW);
-
+            goingForward = true;
         } else if (speed < 0) {
             speed *= -1;
             digitalWrite(aheadPin, LOW);
@@ -52,33 +48,11 @@ void move(int speed, int pwdPin, int aheadPin, int reversePin) {
 }
 
 void moveRightGearMotor(int speed) {
-    stopRightGearMotorTask.disable();
     move(speed, RIGHT_GEARMOTOR_PWD, RIGHT_GEARMOTOR_AHEAD, RIGHT_GEARMOTOR_REVERSE);
-    stopRightGearMotorTask.restartDelayed(MIN_MOVE_TIME);
 }
 
 void moveLeftGearMotor(int speed) {
-    stopLeftGearMotorTask.disable();
     move(speed, LEFT_GEARMOTOR_PWD, LEFT_GEARMOTOR_AHEAD, LEFT_GEARMOTOR_REVERSE);
-    stopLeftGearMotorTask.restartDelayed(MIN_MOVE_TIME);
-}
-
-void stop(int pwdPin, int aheadPin, int reversePin) {
-    if (areInitializedGearMotors) {
-        analogWrite(pwdPin, 0);
-        digitalWrite(aheadPin, LOW);
-        digitalWrite(reversePin, LOW);
-    }
-}
-
-void stopLeftGearMotor() {
-    stop(LEFT_GEARMOTOR_PWD, LEFT_GEARMOTOR_AHEAD, LEFT_GEARMOTOR_REVERSE);
-    stopLeftGearMotorTask.disable();
-}
-
-void stopRightGearMotor() {
-    stop(RIGHT_GEARMOTOR_PWD, RIGHT_GEARMOTOR_AHEAD, RIGHT_GEARMOTOR_REVERSE);
-    stopRightGearMotorTask.disable();
 }
 
 #endif //_GEARMOTOR_H_

@@ -2,6 +2,7 @@
 #include <TaskScheduler.h>
 #include "Commands.h"
 #include "Debugger.h"
+#include "HC_SR04_sensor.h"
 
 //SoftwareSerial Bluetooth(2, 3);   º
 
@@ -12,8 +13,7 @@ Scheduler scheduler;
 // Setup function
 void setup() {
     scheduler.init();
-    //scheduler.addTask(stopLeftGearMotorTask);
-    //scheduler.addTask(stopRightGearMotorTask);
+    scheduler.addTask(measureObstacleDistanceTask);
     //Serial.begin(9600);
 
     // Listen on //Serial connection for messages from the PC
