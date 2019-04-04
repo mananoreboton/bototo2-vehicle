@@ -7,11 +7,8 @@
 
 // Attach a new CmdMessenger object to the default Bluetooth port
 
-Scheduler scheduler;
-
 // Setup function
 void setup() {
-    scheduler.init();
     //scheduler.addTask(stopLeftGearMotorTask);
     //scheduler.addTask(stopRightGearMotorTask);
     //Serial.begin(9600);
@@ -39,7 +36,6 @@ void setup() {
 
 // Loop function
 void loop() {
-    scheduler.execute();
     // Process incoming //Serial data, and perform callbacks
     cmdMessenger.feedinSerialData();
 }
