@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/mrbueno/code/arduinoTestBT/lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp" "/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles/arduinoTestBT.dir/lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.o"
   "/home/mrbueno/code/arduinoTestBT/src/Main.cpp" "/home/mrbueno/code/arduinoTestBT/cmake-build-debug/CMakeFiles/arduinoTestBT.dir/src/Main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -14,6 +15,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/mrbueno/.platformio/packages/framework-arduinoavr/variants/standard"
   "/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"
   "/home/mrbueno/.platformio/lib/TaskScheduler_ID721/src"
+  "/home/mrbueno/.platformio/lib/EnableInterrupt_ID311"
   "/home/mrbueno/.platformio/lib/CmdMessenger_ID171"
   "/home/mrbueno/.platformio/lib/CmdMessenger_ID171/utility"
   "/home/mrbueno/.platformio/lib/PID_ID2"

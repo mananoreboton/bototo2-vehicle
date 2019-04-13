@@ -253,6 +253,33 @@ PLATFORMIO_UPDATE_ALL/fast:
 	$(MAKE) -f CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/build.make CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/build
 .PHONY : PLATFORMIO_UPDATE_ALL/fast
 
+lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.o: lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.o
+
+.PHONY : lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.o
+
+# target to build an object file
+lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.o:
+	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.o
+.PHONY : lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.o
+
+lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.i: lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.i
+
+.PHONY : lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.i
+
+# target to preprocess a source file
+lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.i:
+	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.i
+.PHONY : lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.i
+
+lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.s: lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.s
+
+.PHONY : lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.s
+
+# target to generate assembly for a file
+lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.s:
+	$(MAKE) -f CMakeFiles/arduinoTestBT.dir/build.make CMakeFiles/arduinoTestBT.dir/lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.s
+.PHONY : lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.s
+
 src/Main.o: src/Main.cpp.o
 
 .PHONY : src/Main.o
@@ -299,6 +326,9 @@ help:
 	@echo "... PLATFORMIO_UPLOADFS"
 	@echo "... PLATFORMIO_REBUILD_PROJECT_INDEX"
 	@echo "... PLATFORMIO_UPDATE_ALL"
+	@echo "... lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.o"
+	@echo "... lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.i"
+	@echo "... lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.s"
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"

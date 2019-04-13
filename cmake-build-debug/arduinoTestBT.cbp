@@ -68,6 +68,7 @@
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/variants/standard"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
 					<Add directory="/home/mrbueno/.platformio/lib/TaskScheduler_ID721/src"/>
+					<Add directory="/home/mrbueno/.platformio/lib/EnableInterrupt_ID311"/>
 					<Add directory="/home/mrbueno/.platformio/lib/CmdMessenger_ID171"/>
 					<Add directory="/home/mrbueno/.platformio/lib/CmdMessenger_ID171/utility"/>
 					<Add directory="/home/mrbueno/.platformio/lib/PID_ID2"/>
@@ -108,6 +109,7 @@
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/variants/standard"/>
 					<Add directory="/home/mrbueno/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
 					<Add directory="/home/mrbueno/.platformio/lib/TaskScheduler_ID721/src"/>
+					<Add directory="/home/mrbueno/.platformio/lib/EnableInterrupt_ID311"/>
 					<Add directory="/home/mrbueno/.platformio/lib/CmdMessenger_ID171"/>
 					<Add directory="/home/mrbueno/.platformio/lib/CmdMessenger_ID171/utility"/>
 					<Add directory="/home/mrbueno/.platformio/lib/PID_ID2"/>
@@ -218,6 +220,288 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/.gitattributes">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/COPYING.txt">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/DirectIO.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/README.md">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/analog.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/base.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/Olimexino_328.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/Olimexino_32U4.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/Olimexino_85.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/Olimexino_Nano.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/RGB_Glasses.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/adafruit32u4.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/atmega168pb-xmini.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/atmega328p-xmini.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/atmega328pb-xmini.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/bluefruitmicro.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/circuitplay32u4.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/digitalsandbox.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/eightanaloginputs.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/emoro_variants.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/ethernet.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/feather32u4.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/flora.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/gemma.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/itsybitsy32u4.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/leonardo.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/lilypadusbplus.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/mega.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/mega2560pro.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/micro.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/minibench.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/promicro.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/rf128.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/robot_control.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/robot_motor.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/ser7seg.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/standard.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/tiny8.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/avr/yun.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/sam/arduino_due_x.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/Dragonfly.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/Fox.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/Fox3.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/Lion.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/SparkFun_9DoF_M0.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/SparkFun_LilyMini.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/SparkFun_ProRF.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/SparkFun_SAMD21_Dev.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/SparkFun_SAMD_Mini.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/adi.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/arduino_mzero.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/arduino_zero.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/circuitplay.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/feather_m0.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/feather_m0_express.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/feather_m4.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/gemma_m0.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/hallowing_m0_express.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/industruino_d21g.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/itsybitsy_m0.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/itsybitsy_m4.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/metro_m0.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/metro_m4.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/mkr1000.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/mkrfox1200.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/mkrgsm1400.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/mkrwan1300.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/mkrwifi1010.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/mkrzero.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/pirkey.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/trinket_m0.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/boards/samd/zero_radio.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/pin.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/ports.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/ports_avr.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/ports_sam.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/include/ports_samd.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/DirectIO/library.properties">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/PinChangeInt/Examples/GetPSTR/GetPSTR.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/PinChangeInt/Examples/PinChangeIntDebug/PinChangeIntDebug.ino">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/PinChangeInt/Examples/PinChangeIntExample2560/PinChangeIntExample2560.ino">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/PinChangeInt/Examples/PinChangeIntExample328/PinChangeIntExample328.ino">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/PinChangeInt/Examples/PinChangeIntSpeedTest/PinChangeIntSpeedTest.pde">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/PinChangeInt/Examples/PinChangeIntTest/PinChangeIntTest.ino">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/PinChangeInt/Examples/PinChangeIntTest2/PinChangeIntTest2.ino">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/PinChangeInt/Examples/SimpleExample328/SimpleExample328.ino">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/PinChangeInt/PinChangeInt.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/lib/PinChangeInt/keywords.txt">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/src/Commands.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/src/Debugger.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/src/GearMotor.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
+		<Unit filename="/home/mrbueno/code/arduinoTestBT/src/GearMotorCallbacks.h">
+			<Option target="arduinoTestBT"/>
+		</Unit>
 		<Unit filename="/home/mrbueno/code/arduinoTestBT/src/Main.cpp">
 			<Option target="arduinoTestBT"/>
 		</Unit>

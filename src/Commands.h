@@ -37,9 +37,9 @@ void OnLeftWheelCommand() {
         debug("Wrong args");
         return;
     }
-    cmdMessenger.sendCmd(ACK_COMMAND, "OnLeftWheelCommand");
+    //cmdMessenger.sendCmd(ACK_COMMAND, "OnLeftWheelCommand");
     moveLeftGearMotor(speed);
-    debug("OnLeftWheelCommand", speed);
+    //debug("OnLeftWheelCommand", speed);
 }
 
 void OnRightWheelCommand() {
@@ -50,9 +50,9 @@ void OnRightWheelCommand() {
         debug("Wrong args");
         return;
     }
-    cmdMessenger.sendCmd(ACK_COMMAND, "OnRightWheelCommand");
+    //cmdMessenger.sendCmd(ACK_COMMAND, "OnRightWheelCommand");
     moveRightGearMotor(speed);
-    debug("OnRightWheelCommand", speed);
+    //debug("OnRightWheelCommand", speed);
 }
 
 

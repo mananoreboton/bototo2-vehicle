@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/arduinoTestBT.dir/lib/PinChangeInt/Examples/ByteBuffer/ByteBuffer.cpp.o"
   "CMakeFiles/arduinoTestBT.dir/src/Main.cpp.o"
   "arduinoTestBT.pdb"
   "arduinoTestBT"

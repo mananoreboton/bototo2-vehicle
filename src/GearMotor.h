@@ -18,10 +18,12 @@
 
 const unsigned long MIN_MOVE_TIME = 100;
 
-Task stopLeftGearMotorTask(1000, TASK_ONCE, stopLeftGearMotor);
-Task stopRightGearMotorTask(1000, TASK_ONCE, stopRightGearMotor);
+Task stopLeftGearMotorTask(1000, TASK_IMMEDIATE, stopLeftGearMotor);
+Task stopRightGearMotorTask(1000, TASK_IMMEDIATE, stopRightGearMotor);
 
 boolean areInitializedGearMotors = false;
+
+long currentSpeed = 0;
 
 void initGearMotors() {
     pinMode(LEFT_GEARMOTOR_PWD, OUTPUT);
@@ -48,6 +50,7 @@ void move(int speed, int pwdPin, int aheadPin, int reversePin) {
             digitalWrite(reversePin, HIGH);
         }
         analogWrite(pwdPin, speed);
+        currentSpeed = speed;
     }
 }
 
